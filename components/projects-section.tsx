@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ExternalLink } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { projects } from "@/lib/data"
 
 export function ProjectsSection() {
@@ -9,7 +9,7 @@ export function ProjectsSection() {
     <section className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
+          <h2 id="projects-heading" className="text-3xl font-bold mb-4">Featured Projects</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Here are some of my recent projects that showcase my skills and experience
           </p>
@@ -19,9 +19,11 @@ export function ProjectsSection() {
           {projects.map((project) => (
             <Card key={project.slug} className="group hover:shadow-lg transition-shadow flex flex-col h-full overflow-hidden p-0">
               <div className="aspect-video overflow-hidden">
-                <img
+                <Image
                   src={project.image || "/placeholder.svg"}
-                  alt={project.title}
+                  alt={`${project.title} - ${project.description}`}
+                  width={400}
+                  height={225}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -29,15 +31,6 @@ export function ProjectsSection() {
                 <div className="flex-none">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-semibold">{project.title}</h3>
-                    <div className="flex gap-2">
-                      {project.url && (
-                        <Link href={project.url} target="_blank">
-                          <Button size="sm" variant="ghost">
-                            <ExternalLink className="h-4 w-4" />
-                          </Button>
-                        </Link>
-                      )}
-                    </div>
                   </div>
                   <p className="line-clamp-3 text-sm leading-relaxed text-muted-foreground mb-4">
                     {project.description}

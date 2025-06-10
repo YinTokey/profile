@@ -1,0 +1,25 @@
+{
+  "name": "Yinjian Chen - Full Stack Software Engineer",
+  "short_name": "Yinjian Chen",
+  "description": "Full Stack Software Engineer Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/icons/logo.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["portfolio", "developer", "software"],
+  "lang": "en-US"
+} 

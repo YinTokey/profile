@@ -7,7 +7,7 @@ export function SkillsSection() {
     <section className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Skills & Technologies</h2>
+          <h2 id="skills-heading" className="text-3xl font-bold mb-4">Skills & Technologies</h2>
           <p className="text-lg text-muted-foreground">My technical expertise across different domains</p>
         </div>
 

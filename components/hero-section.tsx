@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Mail, Linkedin, Github, ArrowDown } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export function HeroSection() {
   return (
@@ -13,7 +14,7 @@ export function HeroSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+              <h1 id="hero-heading" className="text-4xl md:text-5xl font-bold tracking-tight">
                 Hi, I&apos;m <span className="text-primary">Yinjian</span>
               </h1>
               <p className="text-lg leading-relaxed">
@@ -62,10 +63,13 @@ export function HeroSection() {
           <div className="flex justify-center">
             <Card className="p-1 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full overflow-hidden">
               <div className="w-60 h-60 rounded-full overflow-hidden">
-                <img
+                <Image
                   src="/images/author/yin.jpeg"
-                  alt="Yinjian Chen"
+                  alt="Yinjian Chen - Full Stack Software Engineer"
+                  width={240}
+                  height={240}
                   className="w-full h-full object-cover"
+                  priority
                 />
               </div>
             </Card>

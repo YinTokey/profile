@@ -1,4 +1,4 @@
-import { projectContent } from "@/components/project-content"
+import { projectContent } from "@/lib/project-content"
 
 interface ProjectContentProps {
   slug: string

@@ -7,7 +7,7 @@ export function EducationSection() {
     <section className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Education</h2>
+          <h2 id="education-heading" className="text-3xl font-bold mb-4">Education</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -32,17 +32,9 @@ export function EducationSection() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">{edu.description}</p>
-                {edu.achievements && (
-                  <div className="mt-4">
-                    <h4 className="font-medium mb-2">Key Achievements:</h4>
-                    <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                      {edu.achievements.map((achievement, i) => (
-                        <li key={i}>{achievement}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                <div className="text-sm text-muted-foreground">
+                  <p><strong>Location:</strong> {edu.location}</p>
+                </div>
               </CardContent>
             </Card>
           ))}

@@ -6,9 +6,9 @@ export function Footer() {
     <footer className="bg-muted py-12 px-4">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center space-y-6">
-          <h3 className="text-2xl font-bold">Let's Work Together</h3>
+          <h3 className="text-2xl font-bold">Let&apos;s Work Together</h3>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to
+            I&apos;m always interested in new opportunities and exciting projects. Feel free to reach out if you&apos;d like to
             collaborate!
           </p>
 

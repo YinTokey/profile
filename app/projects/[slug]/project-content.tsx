@@ -1,11 +1,8 @@
-'use client'
-
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
-import * as motion from "framer-motion"
 import Image from "next/image"
-import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote"
+import { MDXRemote } from "next-mdx-remote/rsc"
 import * as React from "react"
 
 type Project = {
@@ -22,7 +19,7 @@ type Project = {
 
 type ProjectContentProps = {
   project: Project
-  serializedContent: MDXRemoteSerializeResult | null
+  markdownContent: string | null
 }
 
 const mdxComponents = {
@@ -82,14 +79,9 @@ const mdxComponents = {
   ),
 }
 
-export function ProjectContent({ project, serializedContent }: ProjectContentProps) {
+export function ProjectContent({ project, markdownContent }: ProjectContentProps) {
   return (
-    <motion.motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="max-w-4xl mx-auto"
-    >
+    <div className="max-w-4xl mx-auto">
       <Link href="/" className="inline-block mb-12">
         <Button variant="ghost" className="flex items-center gap-2 hover:bg-muted">
           <ArrowLeft className="h-4 w-4" />
@@ -126,8 +118,8 @@ export function ProjectContent({ project, serializedContent }: ProjectContentPro
       {/* Content Section */}
       <article className="prose prose-lg prose-neutral dark:prose-invert max-w-none">
         <div className="text-lg leading-8">
-          {serializedContent ? (
-            <MDXRemote {...serializedContent} components={mdxComponents} />
+          {markdownContent ? (
+            <MDXRemote source={markdownContent} components={mdxComponents} />
           ) : (
             <div className="text-muted-foreground text-center py-12">
               <p>No content available for this project.</p>
@@ -135,6 +127,6 @@ export function ProjectContent({ project, serializedContent }: ProjectContentPro
           )}
         </div>
       </article>
-    </motion.motion.div>
+    </div>
   )
 } 
