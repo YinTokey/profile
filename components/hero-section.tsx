@@ -2,8 +2,9 @@
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Mail, Linkedin, Github } from "lucide-react"
+import { Mail, Linkedin, Github, ArrowDown } from "lucide-react"
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 export function HeroSection() {
   return (
@@ -15,18 +16,28 @@ export function HeroSection() {
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
                 Hi, I&apos;m <span className="text-primary">Yinjian</span>
               </h1>
-              <p className="text-xl text-muted-foreground">
-                Full Stack Software Engineer
-              </p>
               <p className="text-lg leading-relaxed">
-                🔍 Currently Software Engineering Master&apos;s student at Carleton University. <br />
-                🖥️ 3+ years in backend development, 4+ years in iOS native development. <br />
-                🌱 Passionate about AI and improving productivity. <br />
-                🎯 Open to Software Engineer part time work opportunities in North America
+              I&apos;m a <strong>freelance</strong> Full-Stack Developer specializing in AI web applications and iOS apps. With over 7 years of industry experience, I build clean, user-friendly software solutions tailored to your vision.
+              </p>
+              <p>
+                Ready to start your project? Get in touch today!
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 relative mt-12">
+              <motion.div
+                className="absolute -top-8 left-[55px]"
+                animate={{
+                  y: [0, 8, 0],
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              >
+                <ArrowDown className="h-5 w-5 text-primary" />
+              </motion.div>
               <Link href="mailto:yinjianchen02@gmail.com">
                 <Button className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />

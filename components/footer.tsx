@@ -21,7 +21,7 @@ export function Footer() {
               yinjianchen02@gmail.com
             </Link>
             <Link
-              href="https://linkedin.com/in/alexjohnson"
+              href="https://linkedin.com/in/yinjianchen"
               target="_blank"
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
@@ -29,7 +29,7 @@ export function Footer() {
               LinkedIn
             </Link>
             <Link
-              href="https://github.com/alexjohnson"
+              href="https://github.com/yintokey"
               target="_blank"
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >

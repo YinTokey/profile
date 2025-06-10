@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { GraduationCap } from "lucide-react"
+import Image from "next/image"
 import { education } from "@/lib/data"
 
 export function EducationSection() {
@@ -8,7 +8,6 @@ export function EducationSection() {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Education</h2>
-          <p className="text-lg text-muted-foreground">My academic background and certifications</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -16,8 +15,14 @@ export function EducationSection() {
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <GraduationCap className="h-6 w-6 text-primary" />
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                    <Image
+                      src={`/images/sections/education/${edu.institution.toLowerCase().includes('carleton') ? 'carleton' : 'fafu'}.${edu.institution.toLowerCase().includes('carleton') ? 'jpeg' : 'png'}`}
+                      alt={`${edu.institution} logo`}
+                      width={48}
+                      height={48}
+                      className="object-contain"
+                    />
                   </div>
                   <div className="flex-1">
                     <CardTitle className="text-lg">{edu.degree}</CardTitle>
