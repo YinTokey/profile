@@ -61,7 +61,7 @@ export function HeroSection() {
 
           <div className="flex justify-center">
             <Card className="p-1 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full overflow-hidden">
-              <div className="w-80 h-80 rounded-full overflow-hidden">
+              <div className="w-60 h-60 rounded-full overflow-hidden">
                 <img
                   src="/images/author/yin.jpeg"
                   alt="Yinjian Chen"
