@@ -35,11 +35,23 @@ export function ExperienceSection() {
                       <h3 className="text-xl font-semibold">{job.position}</h3>
                       <span className="text-sm text-muted-foreground">{job.period}</span>
                     </div>
-                    <p className="text-primary font-medium mb-3">{job.company}</p>
-                    <p className="text-muted-foreground mb-4">{job.description}</p>
+                    <p className="text-primary font-medium mb-4">{job.company}</p>
+                    
+                    {/* Render description as markdown-style list */}
+                    <div className="mb-6">
+                      <ul className="space-y-3">
+                        {job.description.map((item, itemIndex) => (
+                          <li key={itemIndex} className="flex items-start gap-3">
+                            <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                            <p className="text-foreground/90 leading-relaxed">{item}</p>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
                     <div className="flex flex-wrap gap-2">
                       {job.technologies.map((tech) => (
-                        <span key={tech} className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded">
+                        <span key={tech} className="px-3 py-1 bg-muted text-muted-foreground text-sm rounded-full">
                           {tech}
                         </span>
                       ))}
