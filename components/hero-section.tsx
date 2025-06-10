@@ -66,10 +66,12 @@ export function HeroSection() {
                 <Image
                   src="/images/author/yin.jpeg"
                   alt="Yinjian Chen - Full Stack Software Engineer"
-                  width={240}
-                  height={240}
+                  width={480}
+                  height={480}
+                  quality={95}
                   className="w-full h-full object-cover"
                   priority
+                  sizes="(max-width: 768px) 240px, 480px"
                 />
               </div>
             </Card>

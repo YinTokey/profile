@@ -22,9 +22,11 @@ export function ProjectsSection() {
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={`${project.title} - ${project.description}`}
-                  width={400}
-                  height={225}
+                  width={800}
+                  height={450}
+                  quality={90}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className="flex flex-col flex-grow p-6">

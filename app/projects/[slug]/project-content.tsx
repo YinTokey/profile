@@ -33,9 +33,11 @@ const mdxComponents = {
       <Image
         src={src}
         alt={props.alt || ""}
-        width={800}
-        height={400}
+        width={1200}
+        height={600}
+        quality={90}
         className="w-full h-auto object-cover rounded-lg my-8"
+        sizes="(max-width: 768px) 100vw, 800px"
       />
     );
   },
@@ -106,10 +108,12 @@ export function ProjectContent({ project, markdownContent }: ProjectContentProps
             <Image
               src={project.image}
               alt={project.title}
-              width={1200}
-              height={600}
+              width={1600}
+              height={800}
+              quality={95}
               className="w-full h-auto object-cover"
               priority
+              sizes="(max-width: 768px) 100vw, 1200px"
             />
           </div>
         )}

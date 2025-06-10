@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { workExperience } from "@/lib/data"
+import Image from "next/image"
 
 export function ExperienceSection() {
   return (
@@ -20,9 +21,12 @@ export function ExperienceSection() {
                 {/* Timeline dot and company logo */}
                 <div className="relative z-10 flex-shrink-0">
                   <div className="w-16 h-16 bg-background border-4 border-primary rounded-full flex items-center justify-center">
-                    <img
+                    <Image
                       src={job.companyLogo || "/placeholder.svg"}
-                      alt={job.company}
+                      alt={`${job.company} logo`}
+                      width={32}
+                      height={32}
+                      quality={90}
                       className="w-8 h-8 object-contain"
                     />
                   </div>
