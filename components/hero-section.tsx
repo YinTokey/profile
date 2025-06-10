@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Mail, Linkedin, Github, ArrowDown } from "lucide-react"
+import { Mail, Linkedin, Github, ArrowDown, MapPin } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import Image from "next/image"
@@ -17,6 +17,10 @@ export function HeroSection() {
               <h1 id="hero-heading" className="text-4xl md:text-5xl font-bold tracking-tight">
                 Hi, I&apos;m <span className="text-primary">Yinjian</span>
               </h1>
+              <div className="flex items-center gap-2 text-muted-foreground mb-2">
+                <MapPin className="h-4 w-4 text-primary" />
+                <span className="text-sm font-medium">Ottawa, ON, Canada</span>
+              </div>
               <p className="text-lg leading-relaxed">
               I&apos;m a <strong>freelance</strong> Full-Stack Developer specializing in AI web applications and iOS apps. With over 7 years of industry experience, I build clean, user-friendly software solutions tailored to your vision.
               </p>

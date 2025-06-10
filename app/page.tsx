@@ -26,6 +26,12 @@ const structuredData = {
   "image": "https://yinjianchen.dev/images/profile.jpg",
   "email": "yinjianchen02@gmail.com",
   "jobTitle": "Full Stack Software Engineer",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ottawa",
+    "addressRegion": "ON",
+    "addressCountry": "CA"
+  },
   "worksFor": {
     "@type": "Organization",
     "name": "Freelance"
@@ -34,12 +40,21 @@ const structuredData = {
     {
       "@type": "CollegeOrUniversity",
       "name": "Carleton University",
-      "location": "Ottawa, Canada"
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ottawa",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      }
     },
     {
       "@type": "CollegeOrUniversity", 
       "name": "Fujian Agriculture and Forestry University",
-      "location": "Fujian, China"
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fujian",
+        "addressCountry": "CN"
+      }
     }
   ],
   "knowsAbout": [

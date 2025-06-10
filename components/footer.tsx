@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github } from "lucide-react"
+import { Mail, Linkedin, Github, MapPin } from "lucide-react"
 import Link from "next/link"
 
 export function Footer() {
@@ -12,9 +12,9 @@ export function Footer() {
             collaborate!
           </p>
 
-          <div className="flex justify-center gap-6">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
             <Link
-              href="mailto:alex@example.com"
+              href="mailto:yinjianchen02@gmail.com"
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5" />
@@ -36,6 +36,10 @@ export function Footer() {
               <Github className="h-5 w-5" />
               GitHub
             </Link>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <MapPin className="h-5 w-5 text-primary" />
+              <span>Ottawa, ON, Canada</span>
+            </div>
           </div>
         </div>
       </div>

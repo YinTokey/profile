@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
+import { MapPin } from "lucide-react"
 import { education } from "@/lib/data"
 
 export function EducationSection() {
@@ -26,15 +27,19 @@ export function EducationSection() {
                   </div>
                   <div className="flex-1">
                     <CardTitle className="text-lg">{edu.degree}</CardTitle>
-                    <p className="text-primary font-medium">{edu.institution}</p>
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                      <p className="text-primary font-medium">{edu.institution}</p>
+                      <div className="flex items-center gap-1 text-muted-foreground text-sm mt-1 sm:mt-0">
+                        <MapPin className="h-3 w-3" />
+                        <span>{edu.location}</span>
+                      </div>
+                    </div>
                     <p className="text-sm text-muted-foreground">{edu.period}</p>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
-                <div className="text-sm text-muted-foreground">
-                  <p><strong>Location:</strong> {edu.location}</p>
-                </div>
+                {/* Removed the redundant location display since it's now in the header */}
               </CardContent>
             </Card>
           ))}

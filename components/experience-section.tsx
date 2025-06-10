@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { workExperience } from "@/lib/data"
 import Image from "next/image"
+import { MapPin } from "lucide-react"
 
 export function ExperienceSection() {
   return (
@@ -39,7 +40,15 @@ export function ExperienceSection() {
                       <h3 className="text-xl font-semibold">{job.position}</h3>
                       <span className="text-sm text-muted-foreground">{job.period}</span>
                     </div>
-                    <p className="text-primary font-medium mb-4">{job.company}</p>
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                      <p className="text-primary font-medium">{job.company}</p>
+                      {job.location && (
+                        <div className="flex items-center gap-1 text-muted-foreground text-sm mt-1 sm:mt-0">
+                          <MapPin className="h-3 w-3" />
+                          <span>{job.location}</span>
+                        </div>
+                      )}
+                    </div>
                     
                     {/* Render description as markdown-style list */}
                     <div className="mb-6">
