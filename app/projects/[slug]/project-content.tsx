@@ -26,13 +26,28 @@ type ProjectContentProps = {
 }
 
 const mdxComponents = {
-  img: (props: { src: string; alt?: string }) => (
-    <Image
-      src={props.src}
-      alt={props.alt || ""}
-      width={800}
-      height={400}
-      className="w-full h-auto object-cover rounded-lg my-8"
+  img: (props: { src: string; alt?: string }) => {
+    // Ensure the src starts with "/" for Next.js Image component
+    const src = props.src.startsWith('/') || props.src.startsWith('http') 
+      ? props.src 
+      : `/${props.src}`;
+    
+    return (
+      <Image
+        src={src}
+        alt={props.alt || ""}
+        width={800}
+        height={400}
+        className="w-full h-auto object-cover rounded-lg my-8"
+      />
+    );
+  },
+  a: (props: React.ComponentProps<'a'>) => (
+    <a 
+      className="text-primary hover:text-primary/80 underline decoration-primary/60 underline-offset-4 transition-colors duration-200 font-medium break-all"
+      target={props.href?.startsWith('http') ? '_blank' : undefined}
+      rel={props.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+      {...props} 
     />
   ),
   h1: (props: React.ComponentProps<'h1'>) => (

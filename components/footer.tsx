@@ -18,7 +18,7 @@ export function Footer() {
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5" />
-              alex@example.com
+              yinjianchen02@gmail.com
             </Link>
             <Link
               href="https://linkedin.com/in/alexjohnson"
@@ -36,12 +36,6 @@ export function Footer() {
               <Github className="h-5 w-5" />
               GitHub
             </Link>
-          </div>
-
-          <div className="pt-6 border-t border-border">
-            <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Alex Johnson. All rights reserved.
-            </p>
           </div>
         </div>
       </div>

@@ -16,14 +16,9 @@ From February 2021 to May 2021, during a major version update, I had the opportu
 
 Please use browser’s translation feature if needed
 
-https://www.niaogebiji.com/article-574404-1.html
-
-
+[https://www.niaogebiji.com/article-574404-1.html](https://www.niaogebiji.com/article-574404-1.html)
 
 
 **Video**  
-https://drive.google.com/file/d/1zSBwsDXa0dzEv6hodfqQj8TxGU4BGxV8/view?usp=drive_link
+[https://drive.google.com/file/d/1zSBwsDXa0dzEv6hodfqQj8TxGU4BGxV8/view?usp=drive_link](https://drive.google.com/file/d/1zSBwsDXa0dzEv6hodfqQj8TxGU4BGxV8/view?usp=drive_link)
 
-**Screenshots**
-
-![](/images/sections/projects/doupai/doupai-x.png)

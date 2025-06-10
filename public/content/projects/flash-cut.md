@@ -8,9 +8,9 @@ Flash Cut is a video generation platform based on text, pictures, and video clip
 
 Website:
 
-https://www.boltcut.ai (English)
+[https://www.boltcut.ai](https://www.boltcut.ai) (English)
 
-https://shanjian.tv (Chinese)
+[https://shanjian.tv](https://shanjian.tv) (Chinese)
 
 
 ### 1. Team Members
@@ -54,5 +54,5 @@ It continued to grow and gain recognition after I left the company. In February 
 
 Here is the Chinese Video link from Phoenix TV
 
-https://v.ifeng.com/c/8grWqZHe3u7
+[https://v.ifeng.com/c/8grWqZHe3u7](https://v.ifeng.com/c/8grWqZHe3u7)
 
