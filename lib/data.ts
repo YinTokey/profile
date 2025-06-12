@@ -251,10 +251,14 @@ export const education = [
 export const blogPosts = [
   {
     slug: "hackathon-journey-1",
-    title: "hackathon journey - I vibe coded a vibe landing page generator",
+    title: "Hackathon Journey - I Vibe Coded a Vibe Landing Page Generator",
+    description: "This was my first time participating in a hackathon. I participated solo, using Cursor, LangGraph, and OpenAI API to build a landing page generator.",
     excerpt: "Hackathon journey - I vibe coded a vibe landing page generator",
     image: "/images/blog/ai-hackathon/1.png",
     date: "2025-06-12",
+    readTime: "3 min read",
+    tags: ["Vibe Coding", "Gen AI", "Hackathon"],
+    author: "Yinjian Chen",
     published: true,
   }
 ]
