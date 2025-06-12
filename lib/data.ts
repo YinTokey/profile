@@ -4,7 +4,7 @@ export const projects = [
     title: "Audibit",
     description: "Audibit gathers the latest and hottest tech news and turns them into podcast-style audio",
     image: "/images/sections/projects/audibit/1.png",
-    technologies: ["Professional"],
+    technologies: ["Next.js", "SwfitUI", "OpenAI", "TTS", "RAG"],
     role: "Developer",
     timeline: "May 2025 - Present",
     url: "/posts/projects/audibit",
@@ -14,7 +14,7 @@ export const projects = [
     title: "Language Translation Platform",
     description: "An internal platform in Xmind Company",
     image: "/images/sections/projects/language-translation/1.jpg",
-    technologies: ["Professional"],
+    technologies: ["Next.js", "RAG", "AWS"],
     role: "Designer & Developer",
     timeline: "Aug 2023 - Jul 2024",
     url: "/posts/projects/translation-platform",
@@ -22,9 +22,9 @@ export const projects = [
   {
     slug: "flash-cut",
     title: "Shanjian",
-    description: "Shanjian Cut is a video generation platform based on text, pictures, and video clips to generate digital avatar videos.",
+    description: "Shanjian is a video generation platform based on text, pictures, and video clips to generate digital avatar videos.",
     image: "/images/sections/projects/shanjian/4.png",
-    technologies: ["Professional"],
+    technologies: ["Node.js", "RabbitMQ", "Redis"],
     role: "Developer",
     timeline: "Jun 2021 - Aug 2022",
     url: "/posts/projects/flash-cut",
@@ -34,7 +34,7 @@ export const projects = [
     title: "Video Rendering Service",
     description: "Video Rendering Service is an internal backend core service that supports all the company's video generation products.",
     image: "/images/sections/projects/video-rendering-service/1.jpg",
-    technologies: ["Professional"],
+    technologies: ["Node.js", "Go", "RabbitMQ", "Microservices"],
     role: "Developer",
     timeline: "Dec 2021 - Aug 2022",
     url: "/posts/projects/rendering-service",
@@ -54,7 +54,7 @@ export const projects = [
     title: "Doupai",
     description: "Doupai is a video editing tool that helps users create engaging videos and quickly share them on social media.",
     image: "/images/sections/projects/doupai/doupai-bg.png",
-    technologies: ["Professional"],
+    technologies: ["Objective-C", "UIKit"],
     role: "Developer",
     timeline: "Aug 2019 - May 2021",
     url: "/posts/projects/dp",
@@ -64,7 +64,7 @@ export const projects = [
     title: "Youpai",
     description: "Youpai is a game live-streaming and video-sharing platform under 4399.",
     image: "/images/sections/projects/youpai/2.png",
-    technologies: ["Professional"],
+    technologies: ["Objective-C", "UIKit"],
     role: "Developer",
     timeline: "Mar 2017 - Jan 2018",
     url: "/posts/projects/youpai",
@@ -220,7 +220,8 @@ export const skillCategories = [
   {
     name: "Tools",
     skills: [
-      { name: "Git" },
+      { name: "Cursor" },
+      { name: "V0" },
       { name: "Linux" },
       { name: "Figma" },
       { name: "ffmpeg" },
@@ -244,5 +245,16 @@ export const education = [
     institutionLogo: "/images/sections/education/fafu.png",
     institutionUrl: "https://english.fafu.edu.cn/main.htm",
     location: "China"
+  }
+]
+
+export const blogPosts = [
+  {
+    slug: "hackathon-journey-1",
+    title: "hackathon journey - I vibe coded a vibe landing page generator",
+    excerpt: "Hackathon journey - I vibe coded a vibe landing page generator",
+    image: "/images/blog/ai-hackathon/1.png",
+    date: "2025-06-12",
+    published: true,
   }
 ]

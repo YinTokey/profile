@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/hero-section"
 import { ProjectsSection } from "@/components/projects-section"
+import { BlogSection } from "@/components/blog-section"
 import { ExperienceSection } from "@/components/experience-section"
 import { SkillsSection } from "@/components/skills-section"
 import { EducationSection } from "@/components/education-section"
@@ -94,6 +95,9 @@ export default function HomePage() {
           </section>
           <section id="projects" aria-labelledby="projects-heading">
             <ProjectsSection />
+          </section>
+          <section id="blog" aria-labelledby="blog-heading">
+            <BlogSection />
           </section>
           <section id="experience" aria-labelledby="experience-heading">
             <ExperienceSection />
