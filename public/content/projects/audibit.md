@@ -13,6 +13,14 @@ I designed and developed both the web application and iOS app from concept to la
 - Web: [https://audibit.com](https://audibit.com) 
 - App Store: [https://apps.apple.com/us/app/audibit/id6745983736](https://apps.apple.com/us/app/audibit/id6745983736)
 
+## Tech
+- SwiftUI
+- Next.js
+- RAG
+- OpenAI API
+- Local Machine Learning Model
+- Netlify
+
 ## The Problem
 
 Tech professionals today face information overload, particularly with AI's rapid advancement. Many feel pressured to stay current but struggle with endless scrolling through news feeds, leading to decision fatigue and inefficient information consumption.
