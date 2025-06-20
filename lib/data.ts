@@ -161,6 +161,7 @@ export const skillCategories = [
     name: "Backend",
     skills: [
       { name: "Node.js" },
+      { name: "Postgres (Supabase)" },
       { name: "Redis" },
       { name: "MongoDB" },
       { name: "MySQL" },
@@ -188,7 +189,7 @@ export const skillCategories = [
     skills: [
       { name: "OpenAI API" },
       { name: "RAG" },
-      { name: "LangChain/LangGraph" },
+      { name: "LangChain/LangGraph/LangSmith" },
       { name: "Pinecone" },
       { name: "Qdrant" },
       { name: "Machine Learning (Supervised)" },
