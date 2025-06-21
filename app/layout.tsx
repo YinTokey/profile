@@ -1,18 +1,31 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@/components/analytics";
 import "./globals.css";
+
+// Force static generation for maximum performance
+export const dynamic = 'force-static'
+export const revalidate = false
+
+// Viewport configuration
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+}
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
   display: "swap",
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
   display: "swap",
+  preload: true,
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://yinjianchen.dev";
@@ -48,6 +61,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -102,6 +116,21 @@ export default function RootLayout({
         <link rel="canonical" href={siteUrl} />
         <meta name="theme-color" content="#000000" />
         <meta name="color-scheme" content="dark light" />
+        
+        {/* Performance optimizations */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://linkedin.com" />
+        <link rel="preconnect" href="https://github.com" />
+        
+        {/* Prefetch critical resources */}
+        <link rel="prefetch" href="/images/author/yin.jpeg" />
+        
+        {/* DNS prefetch for external domains */}
+        <link rel="dns-prefetch" href="//linkedin.com" />
+        <link rel="dns-prefetch" href="//github.com" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

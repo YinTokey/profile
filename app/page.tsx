@@ -9,6 +9,10 @@ import { Navigation } from "@/components/navigation"
 import { Metadata } from "next"
 import Script from "next/script"
 
+// Force static generation for maximum performance
+export const dynamic = 'force-static'
+export const revalidate = false
+
 export const metadata: Metadata = {
   title: "Yinjian Chen - Full Stack Software Engineer",
   description: "Full Stack Software Engineer with 7+ years of experience in backend development (Node.js, Go, Python) and iOS development (Swift, SwiftUI). Currently pursuing Software Engineering Master's at Carleton University.",
@@ -24,7 +28,7 @@ const structuredData = {
   "alternateName": "Yin Jian Chen",
   "description": "Full Stack Software Engineer with 7+ years of experience",
   "url": "https://yinjianchen.dev",
-  "image": "https://yinjianchen.dev/images/profile.jpg",
+  "image": "https://yinjianchen.dev/images/author/yin.jpeg",
   "email": "yinjianchen02@gmail.com",
   "jobTitle": "Full Stack Software Engineer",
   "address": {
@@ -80,9 +84,26 @@ const structuredData = {
 export default function HomePage() {
   return (
     <>
+      {/* Preload critical resources */}
+      <link
+        rel="preload"
+        href="/images/author/yin.jpeg"
+        as="image"
+        type="image/jpeg"
+      />
+      <link
+        rel="dns-prefetch"
+        href="https://linkedin.com"
+      />
+      <link
+        rel="dns-prefetch"
+        href="https://github.com"
+      />
+      
       <Script
         id="structured-data"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(structuredData)
         }}

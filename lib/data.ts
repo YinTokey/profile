@@ -170,7 +170,6 @@ export const skillCategories = [
       { name: "Websocket" },
       { name: "Express.js" },
       { name: "Nest.js" },
-
     ],
   },
   {

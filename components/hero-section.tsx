@@ -1,10 +1,7 @@
-'use client'
-
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Mail, Linkedin, Github, ArrowDown, MapPin } from "lucide-react"
 import Link from "next/link"
-import { motion } from "framer-motion"
 import Image from "next/image"
 
 export function HeroSection() {
@@ -30,32 +27,22 @@ export function HeroSection() {
             </div>
 
             <div className="flex flex-wrap gap-4 relative mt-12">
-              <motion.div
-                className="absolute -top-8 left-[55px]"
-                animate={{
-                  y: [0, 8, 0],
-                }}
-                transition={{
-                  duration: 1.5,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              >
+              <div className="absolute -top-8 left-[55px] animate-bounce">
                 <ArrowDown className="h-5 w-5 text-primary" />
-              </motion.div>
+              </div>
               <Link href="mailto:yinjianchen02@gmail.com">
                 <Button className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
                   Contact Me
                 </Button>
               </Link>
-              <Link href="https://linkedin.com/in/yinjianchen" target="_blank">
+              <Link href="https://linkedin.com/in/yinjianchen" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="flex items-center gap-2">
                   <Linkedin className="h-4 w-4" />
                   LinkedIn
                 </Button>
               </Link>
-              <Link href="https://github.com/yintokey" target="_blank">
+              <Link href="https://github.com/yintokey" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="flex items-center gap-2">
                   <Github className="h-4 w-4" />
                   GitHub
@@ -76,6 +63,8 @@ export function HeroSection() {
                   className="w-full h-full object-cover"
                   priority
                   sizes="(max-width: 768px) 240px, 480px"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                 />
               </div>
             </Card>
