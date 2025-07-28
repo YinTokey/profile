@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Mail, Linkedin, Github, ArrowDown, MapPin } from "lucide-react"
+import { Mail, Linkedin, Github, ArrowDown, MapPin, Youtube } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
 export function HeroSection() {
   return (
     <section className="pt-32 pb-20 px-4">
-      <div className="container mx-auto max-w-4xl">
+      <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="space-y-4">
@@ -19,33 +19,39 @@ export function HeroSection() {
                 <span className="text-sm font-medium">Ottawa, ON, Canada</span>
               </div>
               <p className="text-lg leading-relaxed">
-              I&apos;m a <strong>freelance</strong> Full-Stack Developer specializing in AI web applications and iOS apps. With over 7 years of industry experience, I build clean, user-friendly software solutions tailored to your vision.
+              I&apos;m a Full-Stack Developer specializing in AI web applications and iOS apps, currently pursuing a Master&apos;s degree in Software Engineering.
               </p>
               <p>
-                Ready to start your project? Get in touch today!
+                With over 7 years of industry experience, I approach every project with patience and dedication to deliver the best results.
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4 relative mt-12">
+            <div className="flex flex-nowrap gap-3 relative mt-12">
               <div className="absolute -top-8 left-[55px] animate-bounce">
                 <ArrowDown className="h-5 w-5 text-primary" />
               </div>
               <Link href="mailto:yinjianchen02@gmail.com">
                 <Button className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
-                  Contact Me
-                </Button>
-              </Link>
-              <Link href="https://linkedin.com/in/yinjianchen" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" className="flex items-center gap-2">
-                  <Linkedin className="h-4 w-4" />
-                  LinkedIn
+                  Contact
                 </Button>
               </Link>
               <Link href="https://github.com/yintokey" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="flex items-center gap-2">
                   <Github className="h-4 w-4" />
                   GitHub
+                </Button>
+              </Link>
+              <Link href="https://www.youtube.com/@yinjiandev" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="flex items-center gap-2">
+                  <Youtube className="h-4 w-4" />
+                  YouTube
+                </Button>
+              </Link>
+              <Link href="https://linkedin.com/in/yinjianchen" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="flex items-center gap-2">
+                  <Linkedin className="h-4 w-4" />
+                  LinkedIn
                 </Button>
               </Link>
             </div>
