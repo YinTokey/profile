@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Mail, Linkedin, Github, ArrowDown, MapPin, Youtube } from "lucide-react"
+import { Mail, Linkedin, Github, MapPin, Youtube } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
