@@ -21,18 +21,14 @@ export function HeroSection() {
               <p className="text-lg leading-relaxed">
               I&apos;m a Full-Stack Developer specializing in AI web applications and iOS apps, currently pursuing a Master&apos;s degree in Software Engineering.
               </p>
-              <p>
-                With over 7 years of industry experience, I approach every project with patience and dedication to deliver the best results.
-              </p>
+              <p className="text-lg leading-relaxed">
+                With 7+ years of experience, I focus on detail and consistently deliver clean, high-quality results.              </p>
             </div>
 
             <div className="flex flex-nowrap gap-3 relative mt-12">
-              <div className="absolute -top-8 left-[55px] animate-bounce">
-                <ArrowDown className="h-5 w-5 text-primary" />
-              </div>
               <Link href="mailto:yinjianchen02@gmail.com">
                 <Button className="flex items-center gap-2">
-                  <Mail className="h-4 w-4" />
+                  <Mail className="h-4 w-4"/>
                   Contact
                 </Button>
               </Link>
