@@ -41,7 +41,18 @@ export function ExperienceSection() {
                       <span className="text-sm text-muted-foreground">{job.period}</span>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                      <p className="text-primary font-medium">{job.company}</p>
+                      {job.companyUrl ? (
+                        <a
+                          href={job.companyUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary font-medium hover:underline"
+                        >
+                          {job.company}
+                        </a>
+                      ) : (
+                        <p className="text-primary font-medium">{job.company}</p>
+                      )}
                       {job.location && (
                         <div className="flex items-center gap-1 text-muted-foreground text-sm mt-1 sm:mt-0">
                           <MapPin className="h-3 w-3" />
