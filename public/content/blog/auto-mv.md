@@ -1,6 +1,5 @@
-## I Built an Open-Source Music Video Generator
 
-### 1. Introduction
+# 1. Introduction
 
 I enjoy listening to background music on YouTube and have tried creating similar music using tools like Suno AI, LeonardoAI, Runware, DALL·E, and CapCut. I noticed that these music videos usually follow a few basic patterns:
 - Background image
@@ -12,7 +11,7 @@ With my experience using FFmpeg for video generation, I decided to build a tool 
 
 Here’s how the tool works:
 
-### 2. Background Image Generation
+# 2. Background Image Generation
 
 ![](images/blog/auto-mv/1.png)
 
@@ -22,7 +21,7 @@ This tool enables both instrumental music and music with a singer (so you can cr
 
 Next, the tool calls Runware AI to generate background images. Runware is an image generation service, similar to Midjourney.
 
-### 3. Music Generation
+# 3. Music Generation
 
 ![](images/blog/auto-mv/2.png)
 
@@ -30,7 +29,7 @@ The next step is music generation. ChatGPT analyzes the background image and cra
 
 Then, the Suno API is used to generate the music file.
 
-### 4. Video Generation
+# 4. Video Generation
 
 ![](images/blog/auto-mv/3.png)
 
@@ -40,11 +39,11 @@ Finally, we use FFmpeg to generate the finished video.
 
 That’s the entire process.
 
-### 5. Cost
+# 5. Cost
 
 There are two types of videos. If you use a reference character, the cost is about 12 cents per video. If you use the Juggernaut model for image generation, the cost drops to around 8 cents.
 
-### 6. Animation (Future Work)
+# 6. Animation (Future Work)
 
 So far, the tool generates videos with static images. But what about animated images? I haven’t implemented this feature yet, but Leonardo.AI’s `Motion One` model can generate animated videos by adjusting the movement strength (I set it to 1 in my test).
 
@@ -54,7 +53,7 @@ Below is an example of an animated video generated using Leonardo.AI:
 
 Leonardo.AI also supports API calls, so integrating animation into the project is definitely possible in the future.
 
-### 7. Project Link
+# 7. Project Link
 
 Here is the project link, hope you like it!
 
