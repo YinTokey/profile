@@ -260,5 +260,17 @@ export const blogPosts = [
     tags: ["Vibe Coding", "Gen AI", "Hackathon"],
     author: "Yinjian Chen",
     published: true,
+  }, 
+  {
+    slug: "auto-mv",
+    title: "I built an open-source music video generator",
+    description: "I built an open-source music video generator",
+    excerpt: "I built an open-source music video generator",
+    image: "/images/blog/auto-mv/4.png",
+    date: "2025-08-07",
+    readTime: "5 min read",
+    tags: ["Suno AI", "Runware AI", "FFmpeg"],
+    author: "Yinjian Chen",
+    published: true,
   }
 ]
