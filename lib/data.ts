@@ -272,5 +272,17 @@ export const blogPosts = [
     tags: ["Suno AI", "Runware AI", "FFmpeg"],
     author: "Yinjian Chen",
     published: true,
+  },
+  {
+    slug: "vibe-freelancing",
+    title: "I Failed at Vibe Coding on a Freelance iOS Project",
+    description: "I failed at Vibe Coding on a Freelance iOS Project",
+    excerpt: "I failed at Vibe Coding on a Freelance iOS Project",
+    image: "/images/blog/vibe-freelancing/1.webp",
+    date: "2025-08-08",
+    readTime: "5 min read",
+    tags: ["Vibe Coding", "Freelancing"],
+    author: "Yinjian Chen",
+    published: true,
   }
 ]

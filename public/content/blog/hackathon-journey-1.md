@@ -18,4 +18,4 @@ Hackathon is a great opportunity to meet different interesting people and see so
 <img src="/images/blog/ai-hackathon/3.jpeg" alt="Hackathon event photo" width="640"  height="360" />
 
 <br/>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/9CiUU7HR_tQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/9CiUU7HR_tQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
