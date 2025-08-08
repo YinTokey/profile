@@ -67,7 +67,7 @@ There were also many other test cases. The more I tested, the more problems I fo
 
 ## 7. Rework for vibe coding implementation
 
-Before that, I pasted the client's requirement text into Cursor and let it code. The problem: the doc was a general feature list from a PM, not very detailed and missing edge cases. Cursor could build something, but it might miss some side cases or misunderstand the requirements. The result looked okay, about 85% done. **The last 15% took more time than the first 85%**. I had to fully understand the docs, find what wasn’t said, and use past experience. Edge cases needed manual tests and tweaks. With detailed rules, it’s easy for AI to get them wrong and cause rework.
+Before that, I pasted the client's requirement text into Cursor and let it code. The problem: the doc was a general feature list from a PM, not very detailed and missing edge cases. Cursor could build something, but it might miss some side cases or misunderstand the requirements. The result looked okay, about 80% done. **The last 20% took more time than the first 80%**. I had to fully understand the docs, find what wasn’t said, and use past experience. Edge cases needed manual tests and tweaks. With detailed rules, it’s easy for AI to get them wrong and cause rework.
 
 Bug fixing was another big problem. Even after I switched to AI as a copilot, fixing one bug could introduce new ones, which cut productivity. To avoid this, I reduced code context and was very specific about scope and files when using the tool. (I also tried Windsurf. Nice UI, but the large context sometimes worked against me and overall it was worse than Cursor.)
 
