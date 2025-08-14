@@ -1,14 +1,14 @@
 export const projects = [
-  {
-    slug: "audibit",
-    title: "Audibit",
-    description: "Audibit gathers the latest and hottest tech news and turns them into podcast-style audio",
-    image: "/images/sections/projects/audibit/1.png",
-    technologies: ["Next.js", "SwfitUI", "OpenAI", "TTS", "RAG"],
-    role: "Developer",
-    timeline: "May 2025 - Present",
-    url: "/posts/projects/audibit",
-  },
+  // {
+  //   slug: "audibit",
+  //   title: "Audibit",
+  //   description: "Audibit gathers the latest and hottest tech news and turns them into podcast-style audio",
+  //   image: "/images/sections/projects/audibit/1.png",
+  //   technologies: ["Next.js", "SwfitUI", "OpenAI", "TTS", "RAG"],
+  //   role: "Developer",
+  //   timeline: "May 2025 - Present",
+  //   url: "/posts/projects/audibit",
+  // },
   {
     slug: "translation-platform",
     title: "Language Translation Platform",
