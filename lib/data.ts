@@ -59,16 +59,16 @@ export const projects = [
     timeline: "Aug 2019 - May 2021",
     url: "/posts/projects/dp",
   },
-  {
-    slug: "youpai",
-    title: "Youpai",
-    description: "Youpai is a game live-streaming and video-sharing platform under 4399.",
-    image: "/images/sections/projects/youpai/2.png",
-    technologies: ["Objective-C", "UIKit"],
-    role: "Developer",
-    timeline: "Mar 2017 - Jan 2018",
-    url: "/posts/projects/youpai",
-  },
+  // {
+  //   slug: "youpai",
+  //   title: "Youpai",
+  //   description: "Youpai is a game live-streaming and video-sharing platform under 4399.",
+  //   image: "/images/sections/projects/youpai/2.png",
+  //   technologies: ["Objective-C", "UIKit"],
+  //   role: "Developer",
+  //   timeline: "Mar 2017 - Jan 2018",
+  //   url: "/posts/projects/youpai",
+  // },
 ]
 
 export const workExperience = [
